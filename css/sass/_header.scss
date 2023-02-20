@@ -1,0 +1,30 @@
+.header-bg{
+position: fixed;
+z-index: 100;
+width: 100vw;
+background-color: $bg100;
+border-bottom: 2px solid $bg300;
+}
+
+.header{
+  @include container(xl);
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  padding: 20px 20px;
+
+}
+.header-navbar{
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    color: $gray50;
+    @include type-2(lg);
+    a{
+      padding: 10px 20px;
+    }
+  }
+}
+
+

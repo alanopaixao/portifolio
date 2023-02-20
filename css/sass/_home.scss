@@ -1,0 +1,72 @@
+.home-bg{
+  height: 100vh;
+  background-image: url("../../assets/svg/logoAP-bkg.svg");
+  background-repeat: no-repeat;
+  background-size: 700px;
+  -webkit-background-size: 700px;
+  -moz-background-size: 700px;
+  -o-background-size: 700px;
+  background-position: right 10% top 100%;
+}
+
+.home{
+  @include container(xl);
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.home-text{
+  display: flex;
+  flex-direction: column;
+  span{
+    color: $color1-500;
+    @include type-1(5xl);
+    @include font-weight(b);
+  }
+  h1{
+    @include type-1(8xl);
+    @include font-weight(b);
+  }
+  h2{
+    @include type-1(3xl);
+    @include font-weight(l);
+    color: $gray50;
+    padding-top: 20px;
+  }
+  @include media(md){
+    span{
+      color: $color1-500;
+      @include type-1(3xl);
+    }
+    h1{
+      @include type-1(6xl);
+      @include font-weight(b);
+    }
+    h2{
+      @include type-1(1xl);
+      padding-top: 10px;
+    }
+  }
+    @include media(sm){
+      span{
+        color: $color1-500;
+        @include type-1(2xl);
+      }
+      h1{
+        @include type-1(5xl);
+        @include font-weight(b);
+      }
+      h2{
+        @include type-1(base);
+        padding-top: 10px;
+      }
+  }
+
+}
+
+.home-button{
+  display: flex;
+  gap: 40px;
+  padding: 40px 0;
+}

@@ -1,0 +1,107 @@
+.about{
+  @include container(xl);
+  padding: 100px 20px;
+}
+
+.about-box{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 60px;
+  background-color: $bg200;
+  border: 2px solid $bg300;
+  border-radius: 5px;
+  padding: 40px;
+  @include media(md){
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+}
+
+.about-img{
+  background-image: url("../../assets/img/profile.png");
+  height: 100%;
+  width: 300px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+  @include media(md){
+  display: none;
+  }
+}
+.about-description{
+
+  h1{
+    @include type-1(3xl);
+    @include font-weight(b);    
+    padding-bottom: 10px;
+    &::after {
+      content: '';
+      width: 100px;
+      height: 2px;
+      background-color: $gray100;
+      display: block;
+      margin-top: 10px;
+      @include media(md){
+        width: 60px;
+      }
+    }
+  }
+  p:nth-child(2){
+    @include type-1(2xl);
+    @include font-weight(l);
+    color: $gray100;
+    padding-bottom: 40px;
+
+
+  }
+  p{
+    @include type-1(base);
+    color: $gray100;
+
+    @include font-weight(l);
+    max-width: 90%;
+    span{
+      @include font-weight(b);
+    }
+  }
+  @include media(md){
+    h1{
+      @include type-1(2xl);
+      @include font-weight(b);
+     
+    }
+    p:nth-child(2){
+      @include type-1(sm);
+      @include font-weight(l);
+      color: $gray100;
+    }
+    p{
+      @include type-1(base);
+      color: $gray100;
+
+      @include font-weight(l);
+      max-width: 100%;
+      span{
+        @include font-weight(b);
+      }
+    }
+  }
+}
+.about-description-social{
+  display: flex;
+  gap: 20px;
+  padding-top: 40px;
+  img{
+    background-color: $bg100;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid $bg300;
+    transition: ease .1s;
+    &:hover{
+      border: 2px solid $color1-600;
+    }
+  }
+  @include media(md){
+    justify-content: center;
+  }
+}

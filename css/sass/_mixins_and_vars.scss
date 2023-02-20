@@ -1,0 +1,230 @@
+// color
+$bg100: #000;
+$bg200: #111;
+$bg300: #222;
+
+$gray50: #f9fafb;
+$gray100: #f3f4f6;
+$gray200: #e5e7eb;
+$gray300: #d1d5db;
+$gray400: #9ca3af;
+$gray500: #6b7280;
+$gray600: #4b5563;
+$gray700: #374151;
+$gray800: #1f2937;
+$gray900: #111827;
+
+$color1-50: #fef2f2;
+$color1-100: #fee2e2;
+$color1-200: #fecaca;
+$color1-300: #fca5a5;
+$color1-400: #f87171;
+$color1-500: #ef4444;
+$color1-600: #dc2626;
+$color1-700: #b91c1c;
+$color1-800: #991b1b;
+$color1-900: #7f1d1d;
+
+$color2-50: #fefce8;
+$color2-100: #fef9c3;
+$color2-200: #fef08a;
+$color2-300: #fde047;
+$color2-400: #facc15;
+$color2-500: #eab308;
+$color2-600: #ca8a04;
+$color2-700: #a16207;
+$color2-800: #854d0e;
+$color2-900: #713f12;
+
+// mixins 
+
+
+// font size
+
+@mixin type-1($size) {
+  font-family: 'Poppins', sans-serif;
+	@if $size == xs {
+    font-size: 0.75rem; 
+    line-height: 1rem; 
+	}
+	@else if $size == sm {
+    font-size: 0.875rem; 
+    line-height: 1.25rem; 
+	}
+	@else if $size == base {
+    font-size: 1rem; 
+    line-height: 1.8rem; 
+	}
+	@else if $size == lg {
+    font-size: 1.125rem; 
+    line-height: 1.75rem; 
+	}
+	@else if $size == xl {
+		font-size: 1.25rem; 
+    line-height: 1.75rem; 
+	}
+  @else if $size == 1xl {
+		font-size: 1.25rem; 
+    line-height: 1.75rem; 
+	}
+  @else if $size == 2xl {
+    font-size: 1.5rem; 
+    line-height: 2rem; 
+	}
+  @else if $size == 3xl {
+    font-size: 1.875rem; 
+    line-height: 2.25rem; 
+	}
+  @else if $size == 4xl {
+    font-size: 2.25rem; 
+    line-height: 2.5rem; 
+	}
+  @else if $size == 5xl {
+    font-size: 3rem; 
+    line-height: 1;
+	}
+  @else if $size == 6xl {
+    font-size: 3.75rem; 
+    line-height: 1;
+	}
+  @else if $size == 7xl {
+    font-size: 4.5rem; 
+    line-height: 1;
+	}
+  @else if $size == 8xl {
+    font-size: 6rem; 
+    line-height: 1;
+	}
+  @else if $size == 9xl {
+    font-size: 8rem; 
+    line-height: 1;
+	}
+}
+
+@mixin type-2($size) {
+  font-family: 'Roboto', sans-serif;
+	@if $size == xs {
+    font-size: 0.75rem; 
+    line-height: 1rem; 
+	}
+	@else if $size == sm {
+    font-size: 0.875rem; 
+    line-height: 1.25rem; 
+	}
+	@else if $size == base {
+    font-size: 1rem; 
+    line-height: 1.8rem; 
+	}
+	@else if $size == lg {
+    font-size: 1.125rem; 
+    line-height: 1.75rem; 
+	}
+	@else if $size == xl {
+		font-size: 1.25rem; 
+    line-height: 1.75rem; 
+	}
+  @else if $size == 1xl {
+		font-size: 1.25rem; 
+    line-height: 1.75rem; 
+	}
+  @else if $size == 2xl {
+    font-size: 1.5rem; 
+    line-height: 2rem; 
+	}
+  @else if $size == 3xl {
+    font-size: 1.875rem; 
+    line-height: 2.25rem; 
+	}
+  @else if $size == 4xl {
+    font-size: 2.25rem; 
+    line-height: 2.5rem; 
+	}
+  @else if $size == 5xl {
+    font-size: 3rem; 
+    line-height: 1;
+	}
+  @else if $size == 6xl {
+    font-size: 3.75rem; 
+    line-height: 1;
+	}
+  @else if $size == 7xl {
+    font-size: 4.5rem; 
+    line-height: 1;
+	}
+  @else if $size == 8xl {
+    font-size: 6rem; 
+    line-height: 1;
+	}
+  @else if $size == 9xl {
+    font-size: 8rem; 
+    line-height: 1;
+	}
+}
+
+// font weight
+@mixin font-weight($weight) {
+  @if $weight == l {
+    font-weight: 300;
+	} @else if $weight == r{
+    font-weight: 400;
+  }
+  @else if $weight == b{
+    font-weight: 700;
+  }
+}
+
+// media
+
+@mixin media($disp) {
+	@if $disp == sm {
+		@media only screen and (max-width: 640px) {
+			@content;
+		}
+	} @else if $disp == md {
+		@media only screen and (max-width: 768px) {
+			@content;	
+		}
+  } @else if $disp == lg {
+		@media only screen and (max-width: 1024px) {
+			@content;	
+		}
+  } @else if $disp == xl {
+		@media only screen and (max-width: 1280px) {
+			@content;	
+		} 
+  } @else if $disp == 2xl {
+		@media only screen and (max-width: 1536px) {
+			@content;	
+		}
+  }
+}
+// mixins
+
+@mixin container($disp) {
+	@if $disp == sm {
+		max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px;
+	} @else if $disp == md {
+		max-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+  } @else if $disp == lg {
+		max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+  } @else if $disp == xl {
+		max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  } @else if $disp == 2xl {
+		max-width: 1536px;
+    margin: 0 auto;
+padding: 0 20px;
+  }
+}
+
+@mixin transition{
+  transition: ease-in-out 0.3s
+}
+
