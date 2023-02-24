@@ -2,11 +2,18 @@
   height: 100vh;
   background-image: url("../../assets/svg/logoAP-bkg.svg");
   background-repeat: no-repeat;
-  background-size: 700px;
-  -webkit-background-size: 700px;
-  -moz-background-size: 700px;
-  -o-background-size: 700px;
-  background-position: right 10% top 100%;
+  background-size: 80%;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-position: right 20% top 60%;
+  @include media(lg){
+    background-size: 700px;
+    -webkit-background-size: 700px;
+    -moz-background-size: 700px;
+    -o-background-size: 700px;
+    background-position: right 40% top 60%;
+  }
 }
 
 .home{

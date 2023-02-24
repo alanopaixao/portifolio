@@ -1,0 +1,122 @@
+.projects{
+  @include container(xl)
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.project{
+  display: grid;
+  grid-template-columns: 400px auto;
+  gap: 40px;
+  // @include media(xl){
+  //   grid-template-columns: 1fr 1fr; 
+  // }
+  @include media(sm){
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.project-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: $bg200;
+  border: 2px solid $bg300;
+  border-radius: 5px;
+  img{
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    &:hover{
+      scale: 1.05;
+    }
+    
+  }
+  @include media(lg){
+    padding: 10px;
+  }
+}
+
+.project-content{
+  color: $gray100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  
+  h2{
+    @include type-1(3xl);
+    @include font-weight(b);
+    padding-bottom: 10px;
+  }
+}
+.project-skills{
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  @include media(md){
+    height: 25px
+  }
+}
+
+.project-desc{
+  @include type-1(base);
+  @include font-weight(r);
+  height: 120px;
+  padding-right: 10px;
+
+  // overflow: hidden;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color:  none;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $bg300;
+    border-radius: 20px;
+    border: none;
+  }
+  @include media(sm){
+    height: max-content;
+  }
+}
+
+.project-btns{
+  display: flex;
+  gap: 20px;
+  a{
+    @include type-1(sm);
+    @include font-weight(r);
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: $gray300;
+    transition: ease-in-out 0.3s;
+    letter-spacing: 2px;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 2px $color1-900;
+    border-radius:5px;
+    background-color: #0008;
+    &:hover{
+    box-shadow: 0px 0px 0px 2px $color1-500;
+    color: $gray50;
+    }  
+    &:active{
+      transform: scale(.99);
+    }
+    @include media(sm){
+       @include type-1(xs);
+       padding: 10px 20px;
+    }
+  }
+
+}

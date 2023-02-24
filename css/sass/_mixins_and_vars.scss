@@ -43,7 +43,11 @@ $color2-900: #713f12;
 
 @mixin type-1($size) {
   font-family: 'Poppins', sans-serif;
-	@if $size == xs {
+  @if $size == xxs {
+    font-size: 0.6rem; 
+    line-height: 1rem; 
+	}
+	@else if $size == xs {
     font-size: 0.75rem; 
     line-height: 1rem; 
 	}
