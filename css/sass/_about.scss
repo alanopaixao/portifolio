@@ -31,7 +31,7 @@
 .about-description{
 
   h1{
-    @include type-1(3xl);
+    @include font(3xl);
     @include font-weight(b);    
     padding-bottom: 10px;
     &::after {
@@ -47,15 +47,13 @@
     }
   }
   p:nth-child(2){
-    @include type-1(2xl);
+    @include font(2xl);
     @include font-weight(l);
     color: $gray100;
     padding-bottom: 40px;
-
-
-  }
+   }
   p{
-    @include type-1(base);
+    @include font(base);
     color: $gray100;
 
     @include font-weight(l);
@@ -66,17 +64,17 @@
   }
   @include media(md){
     h1{
-      @include type-1(2xl);
+      @include font(2xl);
       @include font-weight(b);
      
     }
     p:nth-child(2){
-      @include type-1(sm);
+      @include font(sm);
       @include font-weight(l);
       color: $gray100;
     }
     p{
-      @include type-1(base);
+      @include font(base);
       color: $gray100;
 
       @include font-weight(l);
@@ -85,23 +83,5 @@
         @include font-weight(b);
       }
     }
-  }
-}
-.about-description-social{
-  display: flex;
-  gap: 20px;
-  padding-top: 40px;
-  img{
-    background-color: $bg100;
-    padding: 15px;
-    border-radius: 5px;
-    border: 2px solid $bg300;
-    transition: ease .1s;
-    &:hover{
-      border: 2px solid $color1-600;
-    }
-  }
-  @include media(md){
-    justify-content: center;
   }
 }

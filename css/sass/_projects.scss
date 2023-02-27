@@ -1,20 +1,29 @@
 .projects{
-  @include container(xl)
+  @include container(xl);
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .projects-container{
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  @include media(lg){
+    grid-template-columns: 1fr 1fr;
+  }
+  @include media(sm){
+    grid-template-columns: 1fr;
+  }
 }
 
 .project{
   display: grid;
-  grid-template-columns: 400px auto;
+
   gap: 40px;
-  // @include media(xl){
-  //   grid-template-columns: 1fr 1fr; 
-  // }
+  padding: 40px 20px;
+  background-color: $bg200;
+  border: 2px solid $bg300;
+  border-radius: 5px;
   @include media(sm){
     grid-template-columns: 1fr;
     gap: 20px;
@@ -24,10 +33,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
-  background-color: $bg200;
-  border: 2px solid $bg300;
-  border-radius: 5px;
+
+
   img{
     width: 100%;
     border-radius: 5px;
@@ -36,9 +43,6 @@
       scale: 1.05;
     }
     
-  }
-  @include media(lg){
-    padding: 10px;
   }
 }
 
@@ -50,7 +54,7 @@
 
   
   h2{
-    @include type-1(3xl);
+    @include font(2xl);
     @include font-weight(b);
     padding-bottom: 10px;
   }
@@ -58,14 +62,15 @@
 .project-skills{
   display: flex;
   gap: 20px;
+  height: 25px;
   padding-bottom: 20px;
   @include media(md){
-    height: 25px
+    height: 20px;
   }
 }
 
 .project-desc{
-  @include type-1(base);
+  @include font(base);
   @include font-weight(r);
   height: 120px;
   padding-right: 10px;
@@ -86,19 +91,19 @@
     border: none;
   }
   @include media(sm){
-    height: max-content;
+    height: 150px;
   }
 }
 
 .project-btns{
   display: flex;
   gap: 20px;
+  padding-top: 20px;
   a{
-    @include type-1(sm);
+    @include font(sm);
     @include font-weight(r);
     display: inline-block;
-    padding: 10px 15px;
-    margin: 10px 0;
+    padding: 5px 15px;
     color: $gray300;
     transition: ease-in-out 0.3s;
     letter-spacing: 2px;
@@ -114,9 +119,19 @@
       transform: scale(.99);
     }
     @include media(sm){
-       @include type-1(xs);
+       @include font(xs);
        padding: 10px 20px;
     }
   }
 
+}
+
+.more-projects{
+  width: max-content;
+  padding-top: 40px;
+  @include font(base);
+  color: $gray50;
+  span{
+    color: $color1-500;
+  }
 }

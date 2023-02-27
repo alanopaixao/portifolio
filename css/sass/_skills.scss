@@ -9,32 +9,7 @@
 
 }
 
-.title{
-  padding-bottom: 40px;
-  h1{
-    @include type-1(3xl);
-    @include font-weight(b);    
-    padding-bottom: 10px;
-    &::after {
-      content: '';
-      width: 100px;
-      height: 2px;
-      background-color: $gray100;
-      display: block;
-      margin-top: 10px;
-      @include media(md){
-        width: 60px;
-      }
-    }
-  }
-  }
-  @include media(md){
-    h1{
-      @include type-1(2xl);
-      @include font-weight(b);
-     
-    }
-}
+
 
 .skills-language{
   padding-bottom: 40px;
@@ -66,7 +41,7 @@
 .skills-itens{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
   @include media(md){
     grid-template-columns: 1fr;
 
@@ -92,13 +67,13 @@
   // text-align: center;
   h1{
     color: $gray50;
-    @include type-1(1xl);
+    @include font(1xl);
     @include font-weight(r);    
     padding-bottom: 20px;
     }
     p{
       color: $gray100;
-      @include type-1(base);
+      @include font(base);
       @include font-weight(l);    
       padding-bottom: 5px;
     }

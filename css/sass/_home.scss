@@ -28,15 +28,15 @@
   flex-direction: column;
   span{
     color: $color1-500;
-    @include type-1(5xl);
+    @include font(5xl);
     @include font-weight(b);
   }
   h1{
-    @include type-1(8xl);
+    @include font(8xl);
     @include font-weight(b);
   }
   h2{
-    @include type-1(3xl);
+    @include font(3xl);
     @include font-weight(l);
     color: $gray50;
     padding-top: 20px;
@@ -44,28 +44,28 @@
   @include media(md){
     span{
       color: $color1-500;
-      @include type-1(3xl);
+      @include font(3xl);
     }
     h1{
-      @include type-1(6xl);
+      @include font(6xl);
       @include font-weight(b);
     }
     h2{
-      @include type-1(1xl);
+      @include font(1xl);
       padding-top: 10px;
     }
   }
     @include media(sm){
       span{
         color: $color1-500;
-        @include type-1(2xl);
+        @include font(2xl);
       }
       h1{
-        @include type-1(5xl);
+        @include font(5xl);
         @include font-weight(b);
       }
       h2{
-        @include type-1(base);
+        @include font(base);
         padding-top: 10px;
       }
   }

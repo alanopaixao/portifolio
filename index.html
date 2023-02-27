@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Quicksand:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -27,18 +27,33 @@
         <div class="header-logo">
           <img src="./assets/svg/logoAP.svg" alt="" />
         </div>
-        <nav class="header-navbar">
+        <div class="open-sidebar disable">
+          <img src="./assets/svg/open-sidebar.svg" alt="" />
+        </div>
+        <div class="close-sidebar">
+          <img src="./assets/svg/close-sidebar.svg" alt="" />
+        </div>
+        <nav class="header-navbar menu">
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#portifolio">Portifolio</a></li>
-            <li><a href="#linguagem">Linguagem</a></li>
-            <li><a href="#contato" class="gradient">Contato</a></li>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact" class="gradient">Contato</a></li>
+          </ul>
+        </nav>
+        <nav class="header-sidebar menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="home-bg">
+    <section class="home-bg" id="home">
       <div class="home">
         <div class="home-text">
           <span>Olá, me chamo</span>
@@ -46,12 +61,12 @@
           <h2>Front End Developer & UX/UI Design.</h2>
           <div class="home-button">
             <a class="btn" href="#">Baixar CV</a>
-            <a class="btn" href="#">Saiba Mais </a>
+            <a class="btn" href="#about">Saiba Mais </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="about-bg">
+    <section class="about-bg" id="about">
       <div class="about">
         <div class="about-box">
           <div class="about-img"></div>
@@ -66,15 +81,15 @@
               animações, responsividade, acessibilidade e SEO para garantir a
               melhor experiência possível aos usuários.
             </p>
-            <div class="about-description-social">
+            <div class="social-icons">
               <a href="https://www.linkedin.com/in/alanpaixao/" target="_blank">
                 <img src="./assets/svg/social/linkedin.svg" alt=""
               /></a>
               <a href="https://github.com/alanopaixao" target="_blank">
                 <img src="./assets/svg/social/github.svg" alt=""
               /></a>
-              <a href="alanpaixao2@gmail.com" target="_blank">
-                <img src="./assets/svg/social/google.svg" alt=""
+              <a href="mailto:alanpaixao2@gmail.com" target="_blank">
+                <img src="./assets/svg/social/email.svg" alt=""
               /></a>
               <a href="https://wa.me/5585989625690" target="_blank">
                 <img src="./assets/svg/social/whatsapp.svg" alt=""
@@ -84,7 +99,7 @@
         </div>
       </div>
     </section>
-    <section class="skills-bg">
+    <section class="skills-bg" id="skills">
       <div class="skills">
         <div class="title">
           <h1 class="gradient">Minhas Skills.</h1>
@@ -148,12 +163,13 @@
         </div>
       </div>
     </section>
-    <section class="projects-bg">
+    <section class="projects-bg" id="projects">
       <div class="projects">
         <div class="title">
           <h1 class="gradient">Principais projetos.</h1>
         </div>
         <div class="projects-container">
+          <!-- project -->
           <div class="project">
             <div class="project-img">
               <img src="./assets/img/projects/PXconnect.png" alt="" />
@@ -203,6 +219,7 @@
               </div>
             </div>
           </div>
+          <!-- project -->
           <div class="project">
             <div class="project-img">
               <img src="./assets/img/projects/PXconnect.png" alt="" />
@@ -238,11 +255,12 @@
                   />
                 </div>
                 <div class="project-desc">
-                  Destaca o cliente na presença digital através de técnicas de
-                  SEO. Com este projeto, o cliente terá a facilidade de vender
-                  seus planos de internet, fornecer acesso à central do
-                  assinante, disponibilizar o download do aplicativo da Central
-                  do Assinante e contar com suporte técnico especializado.
+                  Este projeto de Front End tem como objetivo colocar o cliente
+                  em evidência na presença digital através de técnicas de SEO.
+                  Com este projeto, o cliente terá a facilidade de vender seus
+                  planos de internet, fornecer acesso à central do assinante,
+                  disponibilizar o download do aplicativo da Central do
+                  Assinante e contar com suporte técnico especializado.
                 </div>
               </div>
               <div class="project-btns">
@@ -251,6 +269,7 @@
               </div>
             </div>
           </div>
+          <!-- project -->
           <div class="project">
             <div class="project-img">
               <img src="./assets/img/projects/PXconnect.png" alt="" />
@@ -286,10 +305,62 @@
                   />
                 </div>
                 <div class="project-desc">
-                  Este projeto de Front End estaca o cliente na presença digital
-                  com SEO e oferecer vendas de planos de internet, acesso à
-                  central do assinante, download do app e suporte técnico
-                  especializado.
+                  Este projeto de Front End tem como objetivo colocar o cliente
+                  em evidência na presença digital através de técnicas de SEO.
+                  Com este projeto, o cliente terá a facilidade de vender seus
+                  planos de internet, fornecer acesso à central do assinante,
+                  disponibilizar o download do aplicativo da Central do
+                  Assinante e contar com suporte técnico especializado.
+                </div>
+              </div>
+              <div class="project-btns">
+                <a href="">Projeto</a>
+                <a href="">Portifolio</a>
+              </div>
+            </div>
+          </div>
+          <!-- project -->
+          <div class="project">
+            <div class="project-img">
+              <img src="./assets/img/projects/PXconnect.png" alt="" />
+            </div>
+            <div class="project-content">
+              <div>
+                <h2 class="project-title">PX Connect</h2>
+                <div class="project-skills">
+                  <img
+                    src="./assets/svg/skills/html5-logo.svg"
+                    title="HTML 5"
+                    alt="HTML 5"
+                  />
+                  <img
+                    src="./assets/svg/skills/css.svg"
+                    title="CSS 3"
+                    alt="CSS 3"
+                  />
+                  <img
+                    src="./assets/svg/skills/javascript.svg"
+                    title="Javascript"
+                    alt="Javascript"
+                  />
+                  <img
+                    src="./assets/svg/skills/react.svg"
+                    title="React"
+                    alt="React"
+                  />
+                  <img
+                    src="./assets/svg/skills/sass.svg"
+                    title="SASS"
+                    alt="SASS"
+                  />
+                </div>
+                <div class="project-desc">
+                  Este projeto de Front End tem como objetivo colocar o cliente
+                  em evidência na presença digital através de técnicas de SEO.
+                  Com este projeto, o cliente terá a facilidade de vender seus
+                  planos de internet, fornecer acesso à central do assinante,
+                  disponibilizar o download do aplicativo da Central do
+                  Assinante e contar com suporte técnico especializado.
                 </div>
               </div>
               <div class="project-btns">
@@ -299,8 +370,72 @@
             </div>
           </div>
         </div>
+        <div class="more-projects">
+          <a href="#">
+            <p>
+              Para mais projetos, <br />acesse o meu <span>Portifolio</span>.
+            </p>
+          </a>
+        </div>
       </div>
     </section>
+    <footer class="footer-bg" id="contact">
+      <div class="footer">
+        <div class="footer-contact">
+          <div class="footer-itens">
+            <div class="adress">
+              <h2>Onde estou</h2>
+              <p>Fortaleza / CE</p>
+            </div>
+            <div class="contacts">
+              <h2>Contato</h2>
+              <a href="tel:+5585989625690"
+                ><img src="./assets/svg/social/phone.svg" alt="" /> +55 85 98962
+                5690</a
+              >
+              <a href="mailto:alanpaixao2@gmail.com">
+                <img src="./assets/svg/social/email.svg" alt="" />
+                alanpaixao2@gmail.com</a
+              >
+            </div>
+            <div class="social">
+              <h2>Siga-me nas redes sociais</h2>
+              <div class="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/alanpaixao/"
+                  target="_blank"
+                >
+                  <img src="./assets/svg/social/linkedin.svg" alt=""
+                /></a>
+                <a href="https://github.com/alanopaixao" target="_blank">
+                  <img src="./assets/svg/social/github.svg" alt=""
+                /></a>
+                <a href="mailto:alanpaixao2@gmail.com" target="_blank">
+                  <img src="./assets/svg/social/instagram.svg" alt=""
+                /></a>
+                <a href="https://twitter.com/alanopaixao" target="_blank">
+                  <img src="./assets/svg/social/twitter.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-me">
+            <div>
+              <h2>Fale comigo agora</h2>
+              <a href="#">Via Whatsapp</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-desc">
+          <p class="footer-text">
+            © Alan Paixão - Todos os direitos reservados, 2023.
+          </p>
+          <div class="footer-logo">
+            <img src="./assets/svg/logoAPfooter.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="./js/script.js"></script>
 </html>
