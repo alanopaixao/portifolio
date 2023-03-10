@@ -71,7 +71,7 @@
 .title{
   padding-bottom: 40px;
   h1{
-    @include font(3xl);
+    @include font(5xl);
     @include font-weight(b);    
     padding-bottom: 10px;
     &::after {
@@ -86,13 +86,13 @@
       }
     }
   }
-  }
   @include media(md){
     h1{
-      @include font(2xl);
-      @include font-weight(b);
+      @include font(3xl);
+      @include font-weight(b); 
      
     }
+  }
 }
 
 .social-icons{

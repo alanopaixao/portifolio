@@ -139,8 +139,8 @@ body {
 }
 .title h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 3rem;
+  line-height: 1;
   font-weight: 700;
   padding-bottom: 10px;
 }
@@ -157,15 +157,15 @@ body {
     width: 60px;
   }
 }
-
 @media only screen and (max-width: 768px) {
-  h1 {
+  .title h1 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
     font-weight: 700;
   }
 }
+
 .social-icons {
   display: flex;
   gap: 20px;
@@ -193,104 +193,78 @@ body {
   width: 100vw;
   background-color: #000;
   border-bottom: 2px solid #222;
+  color: #f3f4f6;
 }
 
-.header {
-  position: relative;
+.nav {
+  width: max-content;
+}
+
+.nav-center {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow: hidden;
   height: 80px;
   display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  grid-template-columns: auto 1fr;
 }
 @media only screen and (max-width: 768px) {
-  .header {
-    height: 70px;
-    grid-template-columns: 1fr auto auto;
-    justify-content: center;
+  .nav-center {
+    grid-template-columns: 1fr;
   }
 }
 
-.open-sidebar, .close-sidebar {
-  display: none;
-}
-@media only screen and (max-width: 768px) {
-  .open-sidebar, .close-sidebar {
-    cursor: pointer;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .open-sidebar img, .close-sidebar img {
-    height: 35px;
-  }
-}
-
-.header-navbar ul {
+.nav-header {
   display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  color: #9ca3af;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-@media only screen and (max-width: 768px) {
-  .header-navbar ul {
-    display: none;
-  }
-  .header-navbar ul a {
-    padding: 10px 20px;
-    transition: all 0.3s;
-  }
-  .header-navbar ul a:hover {
-    color: #f9fafb;
-  }
-}
-
-.header-sidebar {
-  position: absolute;
-  overflow: hidden;
-  top: 0px;
-  right: 10px;
-  padding: 10px 0;
-  width: 200px;
-  height: 300px;
-  border: 1px solid #dc2626;
-  border-radius: 5px;
-  background-color: #000;
-  color: #f9fafb;
-}
-.header-sidebar ul {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 10px;
 }
-.header-sidebar ul li {
-  width: 100%;
-  padding: 5px 0;
-}
-.header-sidebar ul li a {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  padding: 15px 25px;
+.nav-header .nav-toggle {
+  display: none;
 }
 @media only screen and (max-width: 768px) {
-  .header-sidebar {
-    top: 80px;
+  .nav-header .nav-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 }
+.nav-header .nav-toggle img {
+  height: 40px;
+  padding: 5px;
+}
 
-.disable {
-  display: none;
+.nav-open {
+  height: max-content;
+}
+
+.links {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+@media only screen and (max-width: 768px) {
+  .links {
+    flex-direction: column;
+  }
+}
+.links li {
+  width: 100%;
+  text-align: start;
+}
+.links li a {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
 }
 
 .home-bg {
@@ -433,8 +407,8 @@ body {
 
 .about-description h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 3rem;
+  line-height: 1;
   font-weight: 700;
   padding-bottom: 10px;
 }
@@ -469,6 +443,14 @@ body {
 }
 .about-description p span {
   font-weight: 700;
+}
+@media only screen and (max-width: 1024px) {
+  .about-description h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+  }
 }
 @media only screen and (max-width: 768px) {
   .about-description h1 {
@@ -769,7 +751,7 @@ body {
 .footer-itens {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 .footer-itens h2 {
   font-family: "Poppins", sans-serif;
@@ -863,6 +845,9 @@ body {
   gap: 40px;
   padding-top: 20px;
 }
+.footer-desc img {
+  height: 20px;
+}
 @media only screen and (max-width: 768px) {
   .footer-desc {
     font-family: "Poppins", sans-serif;
@@ -871,7 +856,7 @@ body {
     gap: 20px;
   }
   .footer-desc .footer-logo img {
-    height: 20px;
+    height: 15px;
   }
 }
 

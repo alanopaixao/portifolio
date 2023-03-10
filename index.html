@@ -23,35 +23,37 @@
   </head>
   <body>
     <header class="header-bg">
-      <div class="header">
-        <div class="header-logo">
-          <img src="./assets/svg/logoAP.svg" alt="" />
+      <nav id="nav" class="">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./assets/svg/logoAP.svg" alt="" />
+            <button class="nav-toggle">
+              <img src="./assets/svg/open-sidebar.svg" alt="" />
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">Início</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">Sobre</a>
+              </li>
+              <li>
+                <a href="#skills" class="scroll-link">Skills</a>
+              </li>
+              <li>
+                <a href="#projects" class="scroll-link">Projetos</a>
+              </li>
+              <li>
+                <a href="#contat" class="scroll-link">Contato</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="open-sidebar disable">
-          <img src="./assets/svg/open-sidebar.svg" alt="" />
-        </div>
-        <div class="close-sidebar">
-          <img src="./assets/svg/close-sidebar.svg" alt="" />
-        </div>
-        <nav class="header-navbar menu">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact" class="gradient">Contato</a></li>
-          </ul>
-        </nav>
-        <nav class="header-sidebar menu">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </header>
     <section class="home-bg" id="home">
       <div class="home">
@@ -75,8 +77,8 @@
             <p>Front End Developer & UX/UI Design.</p>
             <p>
               Possuo formação em <span>Sistemas de Informação</span> e
-              atualmente atuo como Freelancer <span>Front End</span> Developer e
-              <span>UX/UI</span> Designer. Meu foco está em criar interfaces
+              atualmente atuo como Freelancer <span>Front End Developer</span> e
+              <span>UX/UI Designer</span>. Meu foco está em criar interfaces
               modernas, de alto nível e com desempenho excepcional, utilizando
               animações, responsividade, acessibilidade e SEO para garantir a
               melhor experiência possível aos usuários.
@@ -427,9 +429,7 @@
           </div>
         </div>
         <div class="footer-desc">
-          <p class="footer-text">
-            © Alan Paixão - Todos os direitos reservados, 2023.
-          </p>
+          <p class="footer-text">© Alan Paixão | 2023.</p>
           <div class="footer-logo">
             <img src="./assets/svg/logoAPfooter.svg" alt="" />
           </div>

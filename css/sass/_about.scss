@@ -31,7 +31,7 @@
 .about-description{
 
   h1{
-    @include font(3xl);
+    @include font(5xl);
     @include font-weight(b);    
     padding-bottom: 10px;
     &::after {
@@ -51,6 +51,7 @@
     @include font-weight(l);
     color: $gray100;
     padding-bottom: 40px;
+
    }
   p{
     @include font(base);
@@ -59,6 +60,12 @@
     @include font-weight(l);
     max-width: 90%;
     span{
+      @include font-weight(b);
+    }
+  }
+  @include media(lg){
+    h1{
+      @include font(3xl);
       @include font-weight(b);
     }
   }

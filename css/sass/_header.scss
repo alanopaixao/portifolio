@@ -4,94 +4,70 @@ z-index: 100;
 width: 100vw;
 background-color: $bg100;
 border-bottom: 2px solid $bg300;
+color: $gray100;
 }
-
-.header{
-  position: relative;
+.nav{
+ width: max-content;
+}
+.nav-center{
   @include container(xl);
+  overflow: hidden;
   height: 80px;
   display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  grid-template-columns: auto 1fr;
 
   @include media(md){
-    height: 70px;
-    grid-template-columns: 1fr auto auto;
-    justify-content: center;
-  }
+    grid-template-columns: 1fr;
+   }
 }
 
-.open-sidebar, .close-sidebar{
-display: none;
-  @include media(md){
-    cursor: pointer;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    img{
-      height: 35px;
-    }
-  }
-}
+.nav-header{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
 
-.header-navbar{
-  ul{
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    color: $gray400;
-    @include font(lg);
-    @include media(md){
+  .nav-toggle{
     display: none;
-    a{
-      padding: 10px 20px;
-      transition: all .3s;
-      &:hover{
-        color: $gray50;
-
-      }
+    @include media(md){
+      display: block;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    img{
+      height: 40px;
+      padding: 5px;
     }
   }
 }
+
+.nav-open{
+  height: max-content;
+
 }
 
-.header-sidebar{
-  position: absolute;
-  overflow: hidden;
-  top: 0px;
-  right: 10px;
-  padding: 10px 0;
-  width: 200px;
-  height: 300px;
-  border: 1px solid $color1-600;
-  border-radius: 5px;
-  background-color: #000;
-  color: $gray50;
-  ul{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    padding-top: 10px;
-    li{
-      width: 100%;
-      padding: 5px 0;
-      a{
-        @include font(lg);
-        padding: 15px 25px;
-      }
-    }
-  }
+
+.links{
+  display: flex;
+padding-top: 40px;
+padding-bottom: 40px;
+  gap: 40px;
+  @include font(xl);
   @include media(md){
-    top: 80px;
+   flex-direction: column;
+  }
+li{
+
+  width: 100%;
+  text-align: start;
+  a{
+    display: inline-block;
+    width:100%;
+    // background-color: red;
+    padding: 15px 0;
   }
 }
-
-.disable{
-  display: none;
 }
-
-
