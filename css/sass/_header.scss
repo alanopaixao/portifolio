@@ -52,21 +52,19 @@ color: $gray100;
 
 .links{
   display: flex;
-padding-top: 40px;
-padding-bottom: 40px;
   gap: 40px;
   @include font(xl);
   @include media(md){
    flex-direction: column;
+   padding-top: 40px;
+  padding-bottom: 40px;
   }
-li{
-
+  li{
   width: 100%;
   text-align: start;
   a{
     display: inline-block;
     width:100%;
-    // background-color: red;
     padding: 15px 0;
   }
 }

@@ -245,8 +245,6 @@ body {
 
 .links {
   display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
   gap: 40px;
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
@@ -255,6 +253,8 @@ body {
 @media only screen and (max-width: 768px) {
   .links {
     flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .links li {
