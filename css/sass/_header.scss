@@ -19,6 +19,7 @@ color: $gray100;
 
   @include media(md){
     grid-template-columns: 1fr;
+    height: 70px;
    }
 }
 

@@ -213,6 +213,7 @@ body {
 @media only screen and (max-width: 768px) {
   .nav-center {
     grid-template-columns: 1fr;
+    height: 70px;
   }
 }
 
@@ -386,6 +387,12 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .about-box {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .about-box {
     grid-template-columns: 1fr;
     padding: 40px 20px;
   }
@@ -400,6 +407,11 @@ body {
   border-radius: 5px;
 }
 @media only screen and (max-width: 768px) {
+  .about-img {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 640px) {
   .about-img {
     display: none;
   }

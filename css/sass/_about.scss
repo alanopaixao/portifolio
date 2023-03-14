@@ -12,8 +12,14 @@
   border-radius: 5px;
   padding: 40px;
   @include media(md){
+
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  @include media(sm){
     grid-template-columns: 1fr;
     padding: 40px 20px;
+
   }
 }
 
@@ -25,7 +31,10 @@
   background-position: center center;
   border-radius: 5px;
   @include media(md){
-  display: none;
+  width: 250px;
+  }
+  @include media(sm){
+     display: none;
   }
 }
 .about-description{
