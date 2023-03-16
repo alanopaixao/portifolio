@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta
+      name="description"
+      content="Alan Paixão, Desenvolvedor Front End & UX/UI Design."
     />
     <title>Alan Paixão || Portifolio</title>
     <link
@@ -22,15 +26,16 @@
     />
   </head>
   <body>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <header class="header-bg">
       <nav id="nav" class="">
         <div class="nav-center">
           <!-- nav header -->
           <div class="nav-header">
-            <a href="#home">
+            <a href="#home" aria-label="Logo">
               <img src="./assets/svg/logoAP.svg" alt="" />
             </a>
-            <button class="nav-toggle">
+            <button class="nav-toggle" aria-label="Botão de menu suspenso">
               <img src="./assets/svg/open-sidebar.svg" alt="" />
             </button>
           </div>
@@ -57,7 +62,7 @@
         </div>
       </nav>
     </header>
-    <section class="home-bg" id="home">
+    <section class="home-bg" id="home" aria-label="Início">
       <div class="home">
         <div class="home-text">
           <span>Olá, me chamo</span>
@@ -75,7 +80,7 @@
         </div>
       </div>
     </section>
-    <section class="about-bg" id="about">
+    <section class="about-bg" id="about" aria-label="Sobre mim">
       <div class="about">
         <div class="about-box">
           <div class="about-img"></div>
@@ -91,24 +96,39 @@
               melhor experiência possível aos usuários.
             </p>
             <div class="social-icons">
-              <a href="https://www.linkedin.com/in/alanpaixao/" target="_blank">
+              <a
+                aria-label="Linkedin"
+                href="https://www.linkedin.com/in/alanpaixao/"
+                target="_blank"
+              >
                 <img src="./assets/svg/social/linkedin.svg" alt=""
               /></a>
-              <a href="https://github.com/alanopaixao" target="_blank">
+              <a
+                aria-label="GitHub"
+                href="https://github.com/alanopaixao"
+                target="_blank"
+              >
                 <img src="./assets/svg/social/github.svg" alt=""
               /></a>
-              <a href="mailto:alanpaixao2@gmail.com" target="_blank">
+              <a
+                aria-label="Email"
+                href="mailto:alanpaixao2@gmail.com"
+                target="_blank"
+              >
                 <img src="./assets/svg/social/email.svg" alt=""
               /></a>
               <a href="https://wa.me/5585989625690" target="_blank">
-                <img src="./assets/svg/social/whatsapp.svg" alt=""
+                <img
+                  aria-label="Whatsapp"
+                  src="./assets/svg/social/whatsapp.svg"
+                  alt=""
               /></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="skills-bg" id="skills">
+    <section class="skills-bg" id="skills" aria-label="Minhas Skills">
       <div class="skills">
         <div class="title">
           <h1 class="gradient">Minhas Skills.</h1>
@@ -172,7 +192,7 @@
         </div>
       </div>
     </section>
-    <section class="projects-bg" id="projects">
+    <section class="projects-bg" id="projects" aria-label="Meus Projetos">
       <div class="projects">
         <div class="title">
           <h1 class="gradient">Principais projetos.</h1>
@@ -181,7 +201,12 @@
           <!-- project -->
           <div class="project">
             <div class="project-img">
-              <img src="./assets/img/projects/PXconnect.png" alt="" />
+              <img
+                height="200px"
+                width="350px"
+                src="./assets/img/projects/PXconnect.webp"
+                alt=""
+              />
             </div>
             <div class="project-content">
               <div>
@@ -230,7 +255,12 @@
           <!-- project -->
           <div class="project">
             <div class="project-img">
-              <img src="./assets/img/projects/lescone.png" alt="" />
+              <img
+                height="200px"
+                width="350px"
+                src="./assets/img/projects/lescone.webp"
+                alt=""
+              />
             </div>
             <div class="project-content">
               <div>
@@ -276,7 +306,12 @@
           <!-- project -->
           <div class="project">
             <div class="project-img">
-              <img src="./assets/img/projects/bikcraft-sass.png" alt="" />
+              <img
+                height="200px"
+                width="350px"
+                src="./assets/img/projects/bikcraft-sass.webp"
+                alt=""
+              />
             </div>
             <div class="project-content">
               <div>
@@ -329,7 +364,12 @@
           <!-- project -->
           <div class="project">
             <div class="project-img">
-              <img src="./assets/img/projects/bikcraft.png" alt="" />
+              <img
+                height="200px"
+                width="350px"
+                src="./assets/img/projects/bikcraft.webp"
+                alt=""
+              />
             </div>
             <div class="project-content">
               <div>
@@ -378,7 +418,12 @@
           <!-- project -->
           <div class="project">
             <div class="project-img">
-              <img src="./assets/img/projects/portifolioGrid.png" alt="" />
+              <img
+                height="200px"
+                width="350px"
+                src="./assets/img/projects/portifolioGrid.webp"
+                alt=""
+              />
             </div>
             <div class="project-content">
               <div>
@@ -426,7 +471,12 @@
           <!-- project -->
           <div class="project">
             <div class="project-img">
-              <img src="./assets/img/projects/caveWines.png" alt="" />
+              <img
+                height="200px"
+                width="350px"
+                src="./assets/img/projects/caveWines.webp"
+                alt=""
+              />
             </div>
             <div class="project-content">
               <div>
@@ -473,7 +523,12 @@
           <!-- project -->
           <div class="project">
             <div class="project-img">
-              <img src="./assets/img/projects/BackRoads.png" alt="" />
+              <img
+                height="200px"
+                width="350px"
+                src="./assets/img/projects/BackRoads.webp"
+                alt=""
+              />
             </div>
             <div class="project-content">
               <div>
@@ -528,7 +583,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer-bg" id="contact">
+    <footer class="footer-bg" id="contact" aria-label="Contato">
       <div class="footer">
         <div class="footer-contact">
           <div class="footer-itens">
@@ -538,11 +593,11 @@
             </div>
             <div class="contacts">
               <h2>Contato</h2>
-              <a href="tel:+5585989625690"
+              <a aria-label="Telefone" href="tel:+5585989625690"
                 ><img src="./assets/svg/social/phone.svg" alt="" /> +55 85 98962
                 5690</a
               >
-              <a href="mailto:alanpaixao2@gmail.com">
+              <a aria-label="Email" href="mailto:alanpaixao2@gmail.com">
                 <img src="./assets/svg/social/email.svg" alt="" />
                 alanpaixao2@gmail.com</a
               >
@@ -551,21 +606,31 @@
               <h2>Siga-me nas redes sociais</h2>
               <div class="social-icons">
                 <a
+                  aria-label="Linkedin"
                   href="https://www.linkedin.com/in/alanpaixao/"
                   target="_blank"
                 >
                   <img src="./assets/svg/social/linkedin.svg" alt=""
                 /></a>
-                <a href="https://github.com/alanopaixao" target="_blank">
+                <a
+                  aria-label="Github"
+                  href="https://github.com/alanopaixao"
+                  target="_blank"
+                >
                   <img src="./assets/svg/social/github.svg" alt=""
                 /></a>
                 <a
+                  aria-label="Instagram"
                   href="https://www.instagram.com/alanopaixao/"
                   target="_blank"
                 >
                   <img src="./assets/svg/social/instagram.svg" alt=""
                 /></a>
-                <a href="https://twitter.com/alanopaixao" target="_blank">
+                <a
+                  aria-label="Twitter"
+                  href="https://twitter.com/alanopaixao"
+                  target="_blank"
+                >
                   <img src="./assets/svg/social/twitter.svg" alt=""
                 /></a>
               </div>
